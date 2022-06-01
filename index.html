@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
-    <title>Title</title>
+    <title>IPhub</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/normalize.css">
@@ -14,7 +14,9 @@
 <body>
     <header class="header">
         <div class="header__container container">
-            <img src="img/logo.svg" alt="logo" class="header__logo">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="logo" class="header__logo-image">
+            </a>
             <div class="header__contact contact">
                 <a href="lel:+78888888888" class="contact__number">+7 (888) 888 88 88</a>
                 <a href="" class="contact__button">Получить консультацию</a>
@@ -186,6 +188,76 @@
                 </div>
             </div>
         </section>
+        <section class="quiz">
+            <div class="quiz__container container">
+                <div class="quiz__info">
+                    <h2 class="quiz__title title">Не знаете, что вам нужно? </h2>
+                    <p class="quiz__subtitle subtitle">Пройдите квиз, чтобы выбрать оптимальное решение для Вашей задачи</p>
+                </div>
+                
+                <div class="quiz__content">
+                    <div class="quiz__content-info">
+                        <div class="quiz__questions"></div>
+                        <p class="quiz__indicator"></p>  
+                    </div>
+
+
+
+                    <!-- <div class="quiz__question">
+                        <div class="quiz__question-item">
+                            <ul class="quiz__question-item__answers">
+                                <li>
+                                    
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="q1">
+                                        Регистрация модели
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+                    <ul class="quiz__answers">
+                        <!-- <li class="quiz__answers-item">
+                            <label>
+                                <input type="radio" name="q1">
+                                Регистрация полезной модели
+                            </label>
+                        </li>
+                        <li class="quiz__answers-item">
+                            <label>
+                                <input type="radio" name="q1">
+                                Регистрация полезной модели
+                            </label>
+                        </li> -->
+                    </ul>
+                    <div class="quiz__controls">
+                        <button class="quiz__btn">
+                            <img class="quiz__btn-prev" src="img/prev.png" alt="">
+                        </button>
+                        <button class="quiz__btn">
+                            <img class="quiz__btn-next" src="img/next.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="quiz__bonus">
+                    <h3 class="quiz__bonus-title">Бонусы после прохождения</h3>
+                    <ul class="quiz__bonus-list">
+                        <li class="quiz__bonus-item">
+                            <img src="img/quiz/img1.svg" alt="" class="quiz__bonus-item__image">
+                            <p class="quiz__bonus-item__title">Название бонуса в одну или две строки</p>
+                        </li>
+                        <li class="quiz__bonus-item">
+                            <img src="img/quiz/img2.svg" alt="" class="quiz__bonus-item__image">
+                            <p class="quiz__bonus-item__title">Название бонуса в одну или две строки</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
