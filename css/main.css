@@ -703,3 +703,200 @@ body{
 }
 .slider__btn-next {
 }
+
+
+/* ========================== TEAM BLOCK ==================================== */
+
+.team {
+    background-image: url(../img/team/background_team.png);
+    color: #1B1B1B;
+}
+.team__wrapper {
+    padding: 160px 0px;
+}
+.team__container {
+}
+.container {
+}
+.team__info {
+
+}
+.team__text {
+    max-width: 707px;
+}
+.team__title {
+    font-family: 'STIX Two Text', serif;
+    font-weight: 400;
+    font-size: 38px;
+    margin-bottom: 16px;
+}
+.team__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 50px;
+
+}
+.team__slider {
+}
+.swiper {
+}
+.team-slider__content {
+}
+.slider__content {
+}
+.swiper-wrapper {
+}
+.team-slider__item {
+    max-width: 289px;
+
+}
+
+.team-slider__item:not(:last-child) {
+    margin-right: 20px;
+
+}
+
+.swiper-slide {
+}
+.team__slider-item__image{
+    filter: grayscale(100%);
+    border-radius: 5px;
+}
+.team__slider-item__name {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+    max-width: 130px;
+}
+.team__slider-item__subtitle {
+    margin: 0;
+    padding: 0;
+    color: #5C5C5C;
+    font-weight: 400;
+    font-size: 14px;
+}
+.team-slider__controls{
+    margin-bottom: 70px;
+}
+
+.slider__btn {
+}
+.slider__btn-prev {
+}
+.slider__btn-next {
+}
+.team__forums {
+    
+}
+.team__forums-title {
+    font-weight: 500;
+    font-size: 24px;
+}
+.team__forums-content {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.forums {
+}
+.forums__item {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.forums__item-pers {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    width: 445px;
+}
+.forums__pers-avatar {
+    filter: grayscale(100%);
+    border-radius: 50px;
+    margin-right: 15px;
+}
+.forums__pers-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.forums__pers-name {
+    font-weight: 500;
+    font-size: 16px;
+    color: #1b1b1b;
+    margin: 0;
+    padding: 0;
+}
+.forums__pers-spec {
+    font-weight: 400;
+    font-size: 14px;
+    color: #5C5C5C;
+    margin: 0;
+    padding: 0;
+}
+.forums__item-place {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 495px;
+    margin-right: 50px;
+}
+.forums__place-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #1b1b1b;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.forums__decor {
+    height: 1px;
+    
+}
+.decor-red {
+    
+    width: 495px;
+    background: linear-gradient(to right, #DA4634, #da473407);
+    margin-bottom: 10px;
+}
+.forums__place-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: #5C5C5C;
+    margin: 0;
+    padding: 0;
+}
+.forums__item-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.forums__date-date {
+    font-weight: 500;
+    font-size: 18px;
+    color: #1b1b1b;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.forums__date-time {
+    font-weight: 400;
+    font-size: 16px;
+    color: #5C5C5C;
+    margin: 0;
+    padding: 0;
+}
+.decor-grey {
+    width: 1237px;
+    background: linear-gradient(to right, #8D8D8D, #8d8d8d07);
+    margin: 56px 0px;
+
+}
