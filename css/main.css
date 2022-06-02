@@ -471,15 +471,14 @@ body{
     transition: all .3s ease;
     cursor: pointer;
 
+}
+.quiz__answers-item {
     background-color: #262626;
+
 }
 
-
 .quiz__answers-item.active{
-
     background-color: #DA4533;
-
-
 }
 
 .quiz__answers-item label,
