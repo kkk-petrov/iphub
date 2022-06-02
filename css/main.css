@@ -546,3 +546,154 @@ body{
     font-size: 18px;
     font-weight: 500;
 }
+
+/* ============================= CASES BLOCK ==================================== */
+
+.cases {
+    background-image: url(../img/backgroud-black.png);
+    
+}
+.cases__wrapper {
+    background-color: rgba(0, 0, 0, 0.9);
+
+    padding: 160px 0px;
+
+}
+.cases__container {
+}
+.container {
+}
+.cases__info {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 50px;
+
+
+}
+.cases__text {
+    max-width: 710px;
+}
+.cases__title {
+    font-family: 'STIX Two Text', serif;
+
+    font-size: 38px;
+    font-weight: 400;
+}
+.cases__subtitle {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #8a8a8a;
+
+}
+.cases__btn {
+}
+.btn {
+}
+.btn-next {
+}
+.cases__slider {
+}
+.swiper {
+}
+.slider__content {
+}
+.swiper-wrapper {
+}
+
+.cases-slider__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 289px;
+
+    border-radius: 5px;
+
+    color: #8A8A8A;
+
+    max-width: 598px;
+    max-height: 289px;
+}
+.cases-slider__item:not(:last-child){
+    margin-right: 20px;
+
+}
+
+.slider__item {
+}
+.swiper-slide {
+}
+
+.cases__slider-image{
+    background-color: #2f2f2f;
+    /* padding: 125px 48px; */
+    min-height: 289px;
+    min-width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+} 
+.slider__image {
+    margin: 0 auto;
+}
+
+.cases-slider__item-info{
+    padding: 20px;
+    background-color: #242424;
+    min-height: 289px;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.cases-slider__item-info a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+
+.slider__item-info {
+}
+
+
+.slider__open-btn {
+}
+
+.cases-slider__open-btn{
+    margin-bottom: 48px;
+
+
+}
+.slider__item-title {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5;
+
+}
+.slider__item-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+
+
+}
+.slider__controls {
+}
+.slider__btn {
+}
+.slider__btn-prev {
+}
+.slider__btn-next {
+}

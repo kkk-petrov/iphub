@@ -1,7 +1,3 @@
-// Переменные и константы для слайдера
-const content = document.querySelector('.quiz__slider-content');
-const list = document.querySelector('.quiz__list');
-
 // Переменные и константы для квиза
 const DATA = [
     {
@@ -138,6 +134,16 @@ new Swiper('.services__slider',{
 
 });
 
+// Слайдер с кейсами
+new Swiper('.cases__slider',{
+    navigation: {
+        nextEl: '.slider__btn-next',
+        prevEl: '.slider__btn-prev'
+    },
+    slidesPerView: 'auto',
+    slidesPerGroup: 1
+
+});
 
 // Квиз
 const renderQuestions = (index) => {
