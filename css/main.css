@@ -460,6 +460,7 @@ body{
     margin-bottom: 30px;
 
 }
+.quiz__answers-item.active,
 .quiz__answers-item {
     
     font-size: 16px;
@@ -467,17 +468,23 @@ body{
     width: calc(50% - 10px);
     margin: 0px 0px 15px 0px;
     padding: 18px 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+
     background-color: #262626;
 }
 
 
 .quiz__answers-item.active{
-    font-size: 16px;
-    font-weight: 500;
-    width: calc(50% - 10px);
-    margin: 0px 0px 15px 0px;
-    padding: 18px 20px;
+
     background-color: #DA4533;
+
+
+}
+
+.quiz__answers-item label,
+.quiz__answers-item.active label{
+    cursor: pointer;
 
 }
 
