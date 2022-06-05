@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=STIX+Two+Text:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,400&display=swap');
 
 *,
 *::before,
@@ -161,6 +162,7 @@ body{
 .suptitle {
     margin: 0;
     color: #8A8A8A;
+    text-transform: uppercase;
 
     margin-bottom: 8px;
     font-weight: 400;
@@ -180,7 +182,6 @@ body{
     margin: 0;
     margin-bottom: 32px;
     font-weight: 400;
-
     color: #8A8A8A;
 }
 .info__buttons {
@@ -1578,9 +1579,6 @@ body{
         padding: 10px;
     }
 
-    .quiz__info{
-        padding: 0px 10px 0px 10px;
-    }
 
     .quiz__answers-item{
         width: 300px;
@@ -1773,4 +1771,365 @@ body{
         color: #EAABA4;
     }
     
+}
+
+@media (max-width: 480px) {
+    .header__contact{
+        visibility: hidden;
+        display: none;
+    }
+    .container{
+        max-width: 440px;
+    }
+
+    .info{
+        flex-direction: column;
+        text-align: center;
+    }
+    .info__image{
+        display: none;
+    }
+    .info__buttons{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .info_btn{
+        margin: 0;
+    }
+    .info__btn.btn-big{
+        
+        margin-bottom: 35px;
+    }
+    .info__title{
+        font-size: 44px;
+        font-weight: 500;
+        font-style: italic;
+
+    }
+    .title{
+        font-size: 28px;
+    }
+    .subtitle{
+        font-size: 16px;
+        font-weight: 400;
+        color: #8a8a8a;
+        margin-bottom: 16px;
+    }
+
+    .expirience__item{
+        max-width: 210px;
+        height: 139px;
+    }
+    .clients__list.cards {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .clients__item{
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .services__info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .slider__item {
+        max-width: 210px;
+        max-height: 290px;
+    }
+
+    .slider__image{
+        width: 115px;
+        height: 120px;
+    }
+    .btn-next{
+        margin-bottom: 10px;
+    }
+
+    .quiz__answers-item{
+        width: 200px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .quiz__answers-label{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+    }
+    .quiz__answers-item.active{
+        font-size: 14px;
+        font-weight: 300;
+        padding: 10px;
+    }
+
+    .cases__slider-image{
+        height: 248px;
+        width: 159px;
+        min-width: 0px;
+        min-height: 0px;
+    }
+    .cases__slider-image img{
+        width: 103px;
+        height: 21px;
+    }
+    .slider__item-info {
+        width: 281px;
+        height: 248px;
+        padding: 10px;
+        min-height: 0px;
+    }
+
+    .cases__info{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+        
+    .quiz__subtitle,
+    .help__subtitle {
+        color: rgba(255, 255, 255, 0.623);
+    }
+    .team-slider__item{
+        max-width: 210px;
+        max-height: 360px;
+    }
+    .team__slider-item__image,
+    .team__slider-item__image img{
+        width: 210px;
+        height: 233px;
+    }
+    .forums__item{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .forums__item-pers{
+        max-width: 100%;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+    .forums__pers-avatar{
+        margin-bottom: 0;
+    }
+    .forums__item-place{
+        max-width: 270px;
+    }
+    .forums__item-date{
+        align-self: center;
+    }
+
+    .decor-red{
+        margin: 10px 0px;
+        max-width: 250px;
+    }
+    .decor-grey{
+        margin: 31px 0px 20px 0px;
+        max-width: 100%;
+    }
+    .forums__item-date::before {
+        left: -100px;
+    }
+    .help__image{
+        display: none;
+    }
+    .help__info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .btn-big{
+        margin-right: 0;
+    }
+
+    .footer__subtitle{
+        margin-right: 10px;
+    }
+
+    .footer__content{
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* max-height: 300px; */
+    }
+    .footer__map,
+    .footer__contacts{
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .container{
+        max-width: 320px;
+    }
+    .main__wrapper{
+        padding: 40px 0;
+    }
+    .info__buttons{
+        margin-bottom: 40px;
+    }
+    .expirience__item{
+        max-width: 100%;
+        width: 100%;
+    }
+    .card__back{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+    }
+    .subtitle{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .title{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .info__title{
+        font-size: 34px;
+        font-weight: 500;
+    }
+    .expirience__list.cards{
+        margin-bottom: 48px;
+    }
+    .card{
+        height: 76px;
+        margin-bottom: 15px;
+
+    }
+    .card__title {
+        margin-right: 20px;
+    }
+
+    .services__info{
+        align-items: center;
+        
+    }
+    .btn-next{
+        margin-right: 0;
+    }
+    .slider__item {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .quiz__answers-item{
+        width: 100%;
+        text-align: left;
+    }
+    .quiz__answers-item.active{
+        width: 100%;
+    }
+
+    .slider__item-subtitle{
+        display: none;
+        visibility: hidden;
+    }
+    .cases__info{
+        align-items: center;
+        text-align: center;
+    }
+    .cases__slider-image{
+        min-width: 150px;
+    }
+    .cases__slider-image img{
+        max-height: 21px;
+    }
+    .cases-slider__item-info{
+        max-width: 170px;
+    }
+    .slider__item-title{
+        max-width: 150px;
+        margin: 0;
+        max-height: 100%;
+    }
+
+
+    .team__wrapper{
+        padding: 60px 0px;
+    }
+
+    .team-slider__content{
+        margin-bottom: 15px;
+    }
+
+    .team-slider__item {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        max-height: 436px;
+    }
+    .team__slider-item__image{
+        width: 320px;
+        height: 355px;
+        max-width: 320px;
+        max-height: 355px;
+    }
+    .team__slider-item__image img{
+        width: 320px;
+        height: 355px;
+        max-width: 320px;
+        max-height: 355px;
+    }
+    .team__slider-item__name{
+        max-width: none;
+    }
+    .team-slider__controls{
+        margin-bottom: 15px;
+    }
+    .forums{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .forums__item-place{
+        max-width: none;
+        margin-bottom: 60px;
+    }
+    .forums__place-subtitle{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .forums__place-subtitle{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .decor-grey{
+        margin-top: 60px;
+    }
+    .decor-red{
+        margin: 5px;
+    }
+    
+
+    .footer__text{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__logo,
+    .footer__subtitle{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .footer__decor.decor-grey{
+        margin: 35px;
+    }
+
+    .footer__content{
+        flex-direction: row;
+        margin-bottom: 35px;
+    }
+    .footer__social,
+    .footer__nav{
+        flex: 1 1 50%;
+    }
+    .footer__info{
+        flex-direction: column;
+    }
 }
