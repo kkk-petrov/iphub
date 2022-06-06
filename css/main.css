@@ -403,12 +403,14 @@ body{
     width: 370px;
 
     display: flex;
-    filter: brightness(50%);
 
     justify-content: center;
     align-items: center;
 }
 
+.card__image{
+    filter: brightness(50%);
+}
 
 /* =========================== SERVICES BLOCK =========================== */
 
@@ -1525,7 +1527,6 @@ body{
     }
     .card__image{
         transform: scale(.7);
-        filter: brightness(50%);
     }
 
     .slider__item {
