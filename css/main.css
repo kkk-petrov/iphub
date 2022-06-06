@@ -1375,6 +1375,8 @@ body{
         top: 0;
         z-index: 12;
         width: 100%;
+        
+        transition: all .3s ease 0s;
     }
     .menu__icon{
         right: 0;
@@ -1408,7 +1410,7 @@ body{
         background-color: rgba(0, 0, 0, 0.960);
         z-index: 10;
         padding: 60px 30px;
-        transition: all .4s ease 0s;
+        transition: all .2s ease 0s;
         /* transform: translate(-100%, 0px); */
         /* margin-top: 30px; */
     }
