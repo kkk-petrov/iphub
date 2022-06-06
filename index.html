@@ -21,14 +21,15 @@
                 <a href="tel:+78888888888" class="contact__number">+7 (888) 888 88 88</a>
                 <a href="#" class="contact__button">Получить консультацию</a>
             </div>
-            <div class="menu__icon">
-                <span></span>
-            </div>
+            
             <nav class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
                 <ul class="menu__list">
-                    <li class="menu__item">Услуги</li>
-                    <li class="menu__item">Кейсы</li>
-                    <li class="menu__item">FAQ</li>
+                    <li class="menu__item"><a data-goto=".services" href="#" class="menu__link">Услуги</a></li>
+                    <li class="menu__item"><a data-goto=".cases" href="#" class="menu__link">Кейсы</a></li>
+                    <li class="menu__item"><a data-goto=".help" href="#" class="menu__link">FAQ</a></li>
                 </ul>
             </nav>
         </div>
@@ -139,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section id="services" class="services">
             <div class="services__wrapper">
                 <div class="services__container container">
                     <div class="services__info">
@@ -283,7 +284,7 @@
                 </div>
             </div>
         </section>
-        <section class="cases">
+        <section id="cases" class="cases">
             <div class="cases__wrapper">
                 <div class="cases__container container">
                     <div class="cases__info">
@@ -508,7 +509,7 @@
                 </div>
             </div>
         </section>
-        <section class="help">
+        <section id="faq" class="help">
             <div class="help__wrapper">
                 <div class="help__container container">
                     <div class="help__info">
@@ -534,16 +535,16 @@
                     <div class="footer__nav">
                         <p class="footer__nav-title">Навигация:</p>
                         <ul class="footer__nav-content">
-                            <li class="footer__nav-item"><a href="#">Услуги</a></li>
-                            <li class="footer__nav-item"><a href="#">Кейсы</a></li>
-                            <li class="footer__nav-item"><a href="#">FAQ</a></li>
+                            <li class="menu__item"><a data-goto=".services" href="#" class="menu__link">Услуги</a></li>
+                            <li class="menu__item"><a data-goto=".cases" href="#" class="menu__link">Кейсы</a></li>
+                            <li class="menu__item"><a data-goto=".help" href="#" class="menu__link">FAQ</a></li>
                         </ul>
                     </div>
                     <div class="footer__contacts">
                         <p class="footer__contacts-title">Наши контакты:</p>
                         <ul class="footer__contacts-content">
                             <li class="footer__contacts-item"><a href="mailto:kkpetrov.dev@gmail.com">kkpetrov.dev@gmail.com</a></li>
-                            <li class="footer__contacts-item"><a href="tel:+7888888888">+7 (888) 888 88 88</a></li>
+                            <li class="footer__contacts-item"><a href="tel:+7888888888">+38 (012) 345 67 89</a></li>
                         </ul>
                     </div>
                     <div class="footer__social">
