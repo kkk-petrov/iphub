@@ -124,6 +124,7 @@ const btnPrev = document.querySelector(".quiz__btn-prev");
 let userAnswers = {};
 
 // Переменные и константы для бургера
+const page = document.querySelector(".page");
 const menu = document.querySelector(".menu__list");
 const menuIcon = document.querySelector(".menu__icon");
 const menuLinks = document.querySelectorAll(".menu__link[data-goto]")
@@ -132,12 +133,19 @@ const menuLinks = document.querySelectorAll(".menu__link[data-goto]")
 menuIcon.addEventListener('click', () => {
     if(menu.classList.contains("active")){
         menu.classList.remove('active');
+        menuIcon.classList.remove('active');
     }else{
         menu.classList.add('active');
+        menuIcon.classList.add('active');
     }
 })
 menu.addEventListener('click', (e) => {
     menu.classList.remove('active');
+    menuIcon.classList.remove('active');
+})
+page.addEventListener('click', (e) => {
+    menu.classList.remove('active');
+    menuIcon.classList.remove('active');
 })
 
 // Плавный скролл
@@ -210,9 +218,6 @@ new Swiper('.team__slider',{
 
 // Квиз
 const renderQuestions = (index) => {
-
-    
-
     renderIndicator(index + 1);
     questions.dataset.currentStep = index;
 
@@ -235,30 +240,10 @@ const renderIndicator = (currentStep) => {
 };
 
 quiz.addEventListener('change', (e) => {
-
-    
-    
-    // e.target.parentNode.parentNode.className = "quiz__answers-item";
     if(e.target.classList.contains("answer__input")){
         userAnswers[e.target.name] = e.target.value; 
 
     }
-
-        // if(e.target.classList.contains("answer__input")){
-
-        //     if(e.target.checked == true){
-        //         e.target.parentNode.parentNode.classList.add("active");
-        //         console.log("active") // работает
-
-
-        //     } else if(e.target.checked == false) {
-        //         e.target.parentNode.parentNode.classList.remove("active");
-        //         console.log("nonactive") // не работает   
-        //     }
-        // } 
-    
-    
-     
 })
 
 quiz.addEventListener('click', (e) => {
