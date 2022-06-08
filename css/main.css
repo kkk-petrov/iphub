@@ -2610,6 +2610,25 @@ body{
     .footer__info{
         flex-direction: column;
     }
+
+    .cases-all__list{
+        align-items: center;
+    }
+
+    .cases-all__item{
+        margin-right: 0;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+        
+    }
+    .slider__item-title{
+        margin: 0 auto;
+    }
+    .cases-item__image{
+        visibility: hidden;
+        display: none;
+    }
 }
 
 
