@@ -1383,6 +1383,335 @@ body{
 
 
 
+/* ========================================================================================== */
+/* ===================================== SERVICES PAGE ====================================== */
+/* ========================================================================================== */
+
+
+.services-all {
+
+    background-image: url(../img/backgroud-black.png);
+    color: #8A8A8A;
+}
+.services-all__wrapper{
+    background-color: rgba(0, 0, 0, 0.9);
+
+    padding: 50px 0px 160px 0px;
+}
+
+.services-all__container {
+}
+.container {
+}
+.services-all__info {
+}
+.services-all__title {
+    font-weight: 400;
+    color: #fff;
+    font-size: 38px;
+}
+
+.services-all__search{
+
+}
+.search {
+
+    margin-bottom: 25px;
+    position: relative;
+    max-width: 907px;
+
+}
+.search__input{
+    width: 100%;
+    max-width: 907px;
+    height: 56px;
+    background-color: #1e1e1e;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    color: #8a8a8a;
+
+}
+.search__button{
+    position: absolute;
+    background-color: #1e1e1e;
+    border: none;
+    outline: none;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search__button{
+    width: 24px;
+    height: 24px;
+}
+
+.services-all__categories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.categories__text {
+    margin-right: 15px;
+    color: #8A8A8A;
+    text-transform: uppercase;
+}
+.categories__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.categories__item{
+    background-color: #1e1e1e;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.categories__item:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.categories__item:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.categories__item.active{
+    background-color: #363636;
+}
+
+
+
+.services__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.services__item {
+    max-height: 370px;
+    max-width: 269px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.services__item:last-child {
+    margin: 0;
+}
+
+
+
+.item__categories {
+    font-size: 12px;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+
+}
+.item__category {
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #2a2a2a;
+    border-radius: 10px 0 10px 0;
+}
+
+.item__category:last-child{
+    margin: 0;
+}
+.slider__open-btn {
+}
+.slider__image {
+}
+.slider__subtitle {
+}
+
+
+
+
+/* ========================================================================================== */
+/* ===================================== CASES PAGE ========================================= */
+/* ========================================================================================== */
+
+
+
+.cases-all {
+    background-image: url(../img/backgroud-black.png);
+    color: #8A8A8A;
+}
+
+.cases-all__wrapper {
+    background-color: rgba(0, 0, 0, 0.9);
+
+    padding: 50px 0px 160px 0px;
+}
+.cases-all__container {
+}
+.container {
+}
+.cases-all__info {
+}
+.cases-all__title {
+    color: #fff;
+}
+.title {
+}
+.cases-all__search {
+}
+.search {
+}
+.search__input {
+}
+.search__button {
+}
+.cases-all__categories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.categories__text {
+}
+.categories__list {
+}
+.categories__item {
+}
+.active {
+}
+.cases-all__cards {
+}
+.servises__cards {
+}
+.slider-content {
+}
+.cases-all__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.cases-all__item {
+    display: flex;
+    margin-right: 309px;
+    margin-bottom: 20px;
+}
+.swiper-slide {
+}
+.item__categories {
+}
+.item__category {
+}
+.cases-item__image{
+    min-width: 289px;
+    min-height: 289px;
+}
+.cases__slider-image {
+}
+.slider__image {
+}
+.cases-slider__item-info {
+}
+
+.cases-item__info{
+    min-width:289px ;
+    min-height: 289px;
+}
+.slider__item-info {
+}
+.cases-slider__open-btn {
+}
+.slider__open-btn {
+}
+.slider__item-title {
+}
+.slider__item-subtitle {
+}
+
+
+
+
+/* ========================================================================================== */
+/* ===================================== FAQ PAGE =========================================== */
+/* ========================================================================================== */
+.faq {
+    background-image: url(../img/backgroud-black.png);
+    color: #8A8A8A;
+}
+
+.faq__wrapper {
+    background-color: rgba(0, 0, 0, 0.9);
+
+    padding: 50px 0px 160px 0px;
+}
+
+.faq__title {
+    color: #fff;
+}
+
+.dropdown-categories__list {
+    display: none;
+    background-color: #363636;
+    color: rgba(255, 255, 255, 0.753);
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 46px;
+    border-radius: 5px;
+}
+
+.dropdown-categories__item {
+
+}
+
+.faq__categories{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1565,7 +1894,11 @@ body{
         margin-bottom: 40px;
     }
 
-
+    .services-all__wrapper,
+    .cases-all__wrapper,
+    .faq__wrapper{
+        padding: 110px 0px 40px;
+    }
 }
 
 @media (max-width: 769px) {
@@ -1868,6 +2201,21 @@ body{
         color: #EAABA4;
     }
     
+    .services-all__categories,
+    .cases-all__categories,
+    .faq__categories{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .categories__list{
+        display: none;
+    }
+    .dropdown-categories__list{
+        display: block;
+    }
+
+
 }
 
 @media (max-width: 480px) {
@@ -2070,6 +2418,17 @@ body{
     .footer__map,
     .footer__contacts{
         display: none;
+    }
+    
+    .cases-item__info,
+    .services__item {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .services__list,
+    .cases-all__list{
+        flex-direction: column;
     }
 }
 
