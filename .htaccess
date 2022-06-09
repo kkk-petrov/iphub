@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Редирект на страницу ошибки 404
+ErrorDocument 404 /404.html

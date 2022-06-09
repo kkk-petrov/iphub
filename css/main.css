@@ -557,7 +557,7 @@ body{
 
 .slider__btn-next,
 .slider__btn-prev{
-    transition: all .1s ease-out;
+    transition: all .3s ease;
 
 }
 
@@ -719,9 +719,9 @@ body{
 .quiz__btn:hover {
     cursor: pointer;
 }
-.quiz__btn-prev {
-}
+.quiz__btn-prev,
 .quiz__btn-next {
+    transition: all .3s ease;
 }
 
 .quiz__bonus {
@@ -1641,6 +1641,10 @@ body{
 .slider__item-subtitle {
 }
 
+.cases__item-info__image{
+    display: none;
+    visibility: hidden;
+}
 
 
 
@@ -1683,11 +1687,56 @@ body{
 }
 
 
+/* ========================================================================================== */
+/* ===================================== ERROR PAGE ========================================= */
+/* ========================================================================================== */
 
 
+.error {
+    background-image: url(../img/backgroud-black.png);
+}
+.error__wrapper {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 38px 0px 138px 0px;
+}
+.error__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.error__image {
+}
+.error__text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    color: #f9f9f9;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.error__btn {
+    position: relative;
+}
 
+.error__btn::before{
+    content: url(../img/arrow.png);
+    transform: rotate(-180deg);
+    display: block;
+    position: absolute;
+    left: -17px;
+    top: 25%;
+    opacity: 1;
+    transition: all .3s ease;
+}
+.error__btn:hover::before{
+    left: -50px;
+    opacity: 0;
+    transition: all .3s ease;
 
-
+}
+.btn {
+}
 
 
 
@@ -1896,8 +1945,35 @@ body{
 
     .services-all__wrapper,
     .cases-all__wrapper,
-    .faq__wrapper{
+    .faq__wrapper,
+    .error__wrapper{
         padding: 110px 0px 40px;
+    }
+    .cases-all__list{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+    .cases-all__item{
+        max-width: 49%;
+        margin-right:   0px;
+    }
+    .cases-item__image{
+        height: 342px;
+        width: 100%;
+        min-width: 200px;
+        max-width: 250px;
+    }
+    .cases-item__image img{
+        transform: scale(.8);
+    }
+    .cases-item__info{
+        height: 342px;
+
+        max-width: 250px;
+        min-width: 230px;
+        width: 100%;
+
     }
 }
 
@@ -2215,6 +2291,30 @@ body{
         display: block;
     }
 
+    .cases-item__image{
+        min-width: 50%;
+    }
+    .cases-item__info{
+        min-width: 50%;
+    }
+    .cases-all__list{
+        flex-direction: column;
+    }
+    .cases-all__item{
+        margin: 0 auto;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .error__image {
+        width: 474px;
+        height: 349px;
+    }
+
+    .error__text {
+        font-size: 26px;
+    }
+
 
 }
 
@@ -2430,6 +2530,32 @@ body{
     .cases-all__list{
         flex-direction: column;
     }
+
+    .cases__item-info__image{
+        display: block;
+        visibility: visible;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .slider__item-subtitle{
+        display: none;
+        visibility: hidden;
+    }
+    .cases-item__info{
+        border-radius: 10px;
+        text-align: center;
+    }
+    .cases-slider__open-btn{
+        margin-bottom: 50px;
+    }
+
+    .error__image {
+        width: 340px;
+        height: 250px;
+    }
+    .error__text {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -2519,7 +2645,7 @@ body{
         max-width: 170px;
     }
     .slider__item-title{
-        max-width: 150px;
+        /* max-width: 150px; */
         margin: 0;
         max-height: 100%;
     }
@@ -2629,6 +2755,14 @@ body{
         visibility: hidden;
         display: none;
     }
+
+    .error__image {
+        width: 278px;
+        height: 204px;
+    }
+    .error__text {
+        font-size: 16px;
+    }
 }
 
 
@@ -2659,6 +2793,7 @@ body{
         visibility: hidden;
     
     }
+
     .cases-slider__item-info{
         border-radius: 10px;
         width: 100%;
@@ -2668,12 +2803,9 @@ body{
     .slider__item-title{
         margin: 0 auto;
     }
-    .slider__item-subtitle{
-        display: block;
-        visibility: visible;
-    }
+
     .cases-slider__open-btn {
-        margin-bottom: 10px;
+        margin-bottom: 50px;
     }
     .forums__item-date::before,
     .forums__item-date:hover::before,
