@@ -4,6 +4,48 @@ const menu = document.querySelector(".menu__list");
 const menuIcon = document.querySelector(".menu__icon");
 const menuLinks = document.querySelectorAll(".menu__link[data-goto]")
 
+// Переменные и константы для попапа
+const popup = document.querySelector('.popup');
+const popupContainer = document.querySelector('.popup__container');
+const popupOpen = document.querySelector('.btn-big');
+const popupClose = document.querySelector('.popup__btn-close__image');
+const popupItem = document.querySelector('.popup__item');
+const popupInputs = document.querySelectorAll('.popup__item-input');
+const popupCheckbox = document.querySelector('#popup-checkbox');
+const popupBtn = document.querySelector('.popup__btn');
+
+// Попап
+page.addEventListener('click', (e) => {
+    console.log(e.target)
+    if(e.target.classList.contains('btn-big')){
+        popup.classList.add('active')
+    }
+})
+popup.addEventListener('click', (e) => {
+    console.log(e.target)
+    if(e.target == popupContainer || e.target == popupClose){
+        popup.classList.remove('active')  
+    }
+})
+
+
+
+// Проверка на пустые поля
+popupBtn.addEventListener('click', (e) => {
+    popupInputs.forEach(popupInput => {
+        if(popupInput.value != ''){
+            popupInput.parentNode.classList.remove('empty');
+        } else {
+            popupInput.parentNode.classList.add('empty');
+        }
+    })
+
+    if(popupCheckbox.checked == false){
+        popupCheckbox.parentNode.classList.add("empty");
+    } else{
+        popupCheckbox.parentNode.classList.remove("empty");
+    }
+})
 
 // Бургер-меню
 menuIcon.addEventListener('click', () => {

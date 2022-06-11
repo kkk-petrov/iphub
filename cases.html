@@ -230,7 +230,55 @@
                     <div class="help__info">
                         <h2 class="help__title title">Не нашли нужную услугу?<br>Оставьте заявку, мы вам поможем!</h2>
                         <p class="help__subtitle subtitle">У нас есть решения для всех ваших потребностей в сфере защиты и регистрации интеллектуальной собственности</p>
-                        <a href="" class="help__btn btn-big-black btn-big">Оставить заявку на консультацию</a>
+                        <button class="help__btn btn-big-black btn-big">Оставить заявку на консультацию</button>
+
+                    </div>
+                    <div class="popup">
+                        <div class="popup__container">
+                            <div class="popup__body">
+                                <button class="popup__btn-close">
+                                    <img src="img/close.svg" alt="close popup" class="popup__btn-close__image">
+                                </button>
+                                <h2 class="popup__title">Оставить заявку</h2>
+                                <p class="popup__subtitle">Укажите свои данные, и наш специалист свяжется с вами</p>
+                                <ul class="popup__content">
+                                    <li class="popup__item">
+                                        <p class="popup__item-title">Как к вам обращаться</p>
+                                        <input class="popup__item-input" type="text">
+                                        <p class="popup__item-empty">Введите ФИО</p>
+                                    </li>
+
+                                    <li class="popup__item">
+                                        <p class="popup__item-title">Номер телефона</p>
+                                        <input class="popup__item-input" type="text">
+                                        <p class="popup__item-empty">Укажите ваш номер телефона</p>
+
+                                    </li>
+
+                                    <li class="popup__item ">
+                                        <p class="popup__item-title">Почта</p>
+                                        <input class="popup__item-input" type="text">
+                                        <p class="popup__item-empty">Укажите вашу почту</p>
+
+                                    </li>
+
+                                    <li class="popup__item ">
+                                        <p class="popup__item-title">Запрос</p>
+                                        <textarea class="popup__item-input input-big" type="text"></textarea>
+                                        <p class="popup__item-empty">Поле "запрос" не может быть пустым</p>
+
+                                    </li>
+                                </ul>
+                                <form action="" class="popup__checkbox">
+                                    <input type="checkbox" name="" id="popup-checkbox">
+                                    <p>Я принимаю соглашение на <a href="personaldata.html">обработку персональных данных</a> и <a href="privacypolicy.html">политику конфиденциальности</a></p>
+                                    <p class="popup__item-empty">Примите соглашение</p>
+
+                                </form>
+                                <button class="popup__btn btn btn-next">Отправить</button>
+
+                            </div>
+                        </div>
                     </div>
                     <img src="img/services-page/help/image.png" alt="" class="help__image">
                 </div>
@@ -286,6 +334,6 @@
     </div>
 </footer>
 
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

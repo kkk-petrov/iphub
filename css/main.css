@@ -14,6 +14,176 @@ body{
 
 }
 
+/* ==================== POPUP ====================== */
+
+.popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: -100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 100;
+    transition: top .3s ease-out;
+    transition: background .3s ease-out;
+}
+.popup.active{
+
+    background-color: rgba(0, 0, 0, .9);
+    top: 0;
+}
+.popup__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+
+}
+.popup__body{
+    position: relative;
+    margin:auto;
+    width: 440px;
+    height: 728px;
+    background-color: #1B1B1B;
+    border-radius: 10px;
+
+    flex-direction: column;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+
+.popup__btn-close {
+    position: absolute;
+    cursor: pointer;
+    background-color: #1b1b1b;
+    border: none;
+    outline: none;
+    right: 20px;
+    top: 20px;
+}
+.popup__btn-close__image {
+}
+.popup__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+}
+.popup__subtitle {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 28px;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #8a8a8a;
+    
+}
+.popup__content {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+}
+.popup__item {
+    margin: 0;
+    margin-bottom: 15px;
+}
+.popup__item-title {
+    margin: 0;
+    margin-bottom: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+.popup__item-input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #262626;
+    color: #fff;
+    padding: 0px 15px;
+    margin-bottom: 2px;
+}
+.popup__item-input:focus-visible {
+    border: 1px solid #fff;
+    outline: none;
+}
+.popup__item.empty textarea,
+.popup__item.empty.empty .popup__item-input{
+    border: 1px solid #da4433;
+    outline: none;
+}
+.input-big {
+    max-height: 120px;
+    min-height: 120px;
+    max-width: 100%;
+    min-width: 100%;
+
+    padding: 7px 15px;
+
+}
+.popup__item-empty{
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    color: #DA4533;
+    font-weight: 400;
+    font-size: 12px;
+}
+.popup__checkbox.empty .popup__item-empty,
+.popup__item.empty .popup__item-empty {
+    visibility: visible;
+
+}
+
+.popup__checkbox{
+    /* margin-bottom: 50px; */
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+}
+
+/* .popup__checkbox.empty{
+    border: 1px solid #da4533;
+    border-radius: 10px;
+} */
+
+.popup__checkbox p{
+    margin-left: 26px;
+    margin-bottom: 2px;
+}
+.popup__checkbox a{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.popup__checkbox input{
+    /* left: 5px; */
+    top: 30%;
+    transform: translateY(-30%);
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #1B1B1B;
+    border: 2px solid #bababa;
+    border-radius: 5px;
+}
+
+.popup__btn{
+    background-color: #1B1B1B;
+    cursor: pointer;
+    position: absolute;
+    bottom: -30px;
+}
+
 
 
 /* =========================== HEADER =========================== */
@@ -222,8 +392,10 @@ body{
     text-decoration: none;
     max-width: 300px;
     text-align: center;
-
+    outline: none;
+    cursor: pointer;
     margin-right: 40px;
+    border: none;
 }
 
 .btn-big::after {
@@ -2914,6 +3086,13 @@ body{
     .error__text {
         font-size: 16px;
     }
+
+    .popup__body{
+        width: 360px;
+    }
+    .popup__btn{
+        bottom: -20px;
+    }
 }
 
 
@@ -2981,6 +3160,25 @@ body{
     .forums__item-place{
         margin-bottom: 20px;
 
+    }  
+    .popup__btn-close{
+        top: 10px;
+        right: 10px;
+    }
+    .popup__body{
+        width: 280px;
+        height: 670px;
+        padding: 30px 15px;
+        
+    }
+    .popup__subtitle{
+        margin-bottom: 15px;
+    }
+    .popup__btn{
+        bottom: -3px;
+    }
+    .popup__item{
+        margin-bottom: 8px;
     }
     
 }
