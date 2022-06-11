@@ -11,8 +11,11 @@ const popupOpen = document.querySelector('.btn-big');
 const popupClose = document.querySelector('.popup__btn-close__image');
 const popupItem = document.querySelector('.popup__item');
 const popupInputs = document.querySelectorAll('.popup__item-input');
+const popupEmail = document.querySelector('#popup-email');
+const popupTel = document.querySelector('#popup-tel');
 const popupCheckbox = document.querySelector('#popup-checkbox');
 const popupBtn = document.querySelector('.popup__btn');
+const nums = '1234567890';
 
 // Попап
 page.addEventListener('click', (e) => {
@@ -33,18 +36,26 @@ popup.addEventListener('click', (e) => {
 // Проверка на пустые поля
 popupBtn.addEventListener('click', (e) => {
     popupInputs.forEach(popupInput => {
-        if(popupInput.value != ''){
-            popupInput.parentNode.classList.remove('empty');
-        } else {
-            popupInput.parentNode.classList.add('empty');
-        }
+            if(popupInput.value != ''){
+                popupInput.parentNode.classList.remove('empty');
+            } else {
+                popupInput.parentNode.classList.add('empty');
+            }
     })
+
+    if(popupEmail.value.includes('@') && popupEmail.value.indexOf('@') != popupEmail.value.length-1){
+        console.log(popupEmail.value.indexOf('@'));
+        popupCheckbox.parentNode.classList.remove("empty");
+    } else{
+        popupEmail.parentNode.classList.add("empty"); 
+    }
 
     if(popupCheckbox.checked == false){
         popupCheckbox.parentNode.classList.add("empty");
     } else{
         popupCheckbox.parentNode.classList.remove("empty");
     }
+
 })
 
 // Бургер-меню

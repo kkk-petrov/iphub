@@ -109,10 +109,13 @@ body{
     padding: 0px 15px;
     margin-bottom: 2px;
 }
+
 .popup__item-input:focus-visible {
     border: 1px solid #fff;
     outline: none;
 }
+#popup-tel:invalid,
+#popup-email:invalid,
 .popup__item.empty textarea,
 .popup__item.empty.empty .popup__item-input{
     border: 1px solid #da4433;
@@ -135,6 +138,7 @@ body{
     font-weight: 400;
     font-size: 12px;
 }
+
 .popup__checkbox.empty .popup__item-empty,
 .popup__item.empty .popup__item-empty {
     visibility: visible;
