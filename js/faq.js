@@ -16,30 +16,36 @@ faqList.addEventListener('click', (e) => {
     //     e.target.classList.add('active');
     // } else 
     
-    if(e.target.parentNode.parentNode.classList.contains("faq__list-item")){
-        for(let i = 0;i<faqList.children.length;i++){
-            faqList.children[i].classList.remove('active');
-        }
-        if(e.target.classList.contains('active')){
+    if(e.target.parentNode.classList.contains("faq__list-item")){
+
+
+        if(e.target.parentNode.classList.contains('active')){
             console.log('active')
-            e.target.parentNode.parentNode.classList.remove('active');
-        } else{
+            e.target.parentNode.classList.remove('active');
+        }else{
             console.log('ne active')
-            e.target.parentNode.parentNode.classList.add('active');
-        }
-
-
-
-    } else if(e.target.classList.contains('faq__list-question')){
-        for(let i = 0;i<faqList.children.length;i++){
-            faqList.children[i].classList.remove('active');
-        }
-        if(e.target.classList.contains('active')){
-            console.log('active')
-            e.target.classList.remove('active');
-        } else{
-            console.log('ne active')
+            for(let i = 0;i<faqList.children.length;i++){
+                faqList.children[i].classList.remove('active');
+            }
             e.target.parentNode.classList.add('active');
+
         }
     }
+
+
+
+
+
+    // if(e.target.classList.contains('faq__list-question')){
+    //     for(let i = 0;i<faqList.children.length;i++){
+    //         faqList.children[i].classList.remove('active');
+    //     }
+    //     if(e.target.classList.contains('active')){
+    //         console.log('active')
+    //         e.target.classList.remove('active');
+    //     } else{
+    //         console.log('ne active')
+    //         e.target.parentNode.classList.add('active');
+    //     }
+    // }
 })

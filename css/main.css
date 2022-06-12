@@ -1901,7 +1901,6 @@ body{
     flex-direction: column;
 } */
 .faq__list-item {
-
     position: relative;
     max-width: 598px;
     width: 100%;
@@ -1941,6 +1940,7 @@ body{
     align-items: center;
     transition: all .3s ease;
     margin-bottom: 4px;
+    cursor: pointer;
 
 }
 .faq__list-question:hover {
@@ -1954,8 +1954,7 @@ body{
 .item__category {
 }
 .faq__list-question__text {
-    cursor: pointer;
-    
+    pointer-events: none;    
 }
 .faq__list-question__image {
     transform: rotate(-270deg);
