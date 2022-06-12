@@ -25,7 +25,7 @@ body.addEventListener('click', (e) => {
 })
 popup.addEventListener('click', (e) => {
     console.log(e.target)
-    if(e.target == popupContainer || e.target == popupClose){
+    if(e.target == popupContainer || e.target == popupClose || e.target == popupClose.parentNode){
         popup.classList.remove('active')  
     }
 })
