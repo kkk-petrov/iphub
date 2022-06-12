@@ -21,17 +21,16 @@ body{
     height: 100%;
     position: fixed;
     left: 0;
-    top: -200%;
+    top: 0%;
     background-color: rgba(0, 0, 0, .9);
     opacity: 0;
-    z-index: 100;
-    transition: opacity .1s ease-out, top .5s ease-out;
+    z-index: -100;
+    transition: all .3s ease-out;
 }
 .popup.active{
     /* transition: opacity .1s ease-out, top .5s ease-out; */
-
+    z-index: 100;
     opacity: 1;
-    top: 0;
 }
 .popup__container {
     display: flex;
