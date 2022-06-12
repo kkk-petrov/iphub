@@ -180,13 +180,17 @@ body{
     background-color: #1B1B1B;
     border: 2px solid #bababa;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .popup__btn{
     background-color: #1B1B1B;
     cursor: pointer;
-    position: absolute;
-    bottom: -30px;
+
+}
+.popup__btn.btn-next{
+    margin: 0;
+
 }
 
 
@@ -3122,7 +3126,7 @@ body{
         max-height: 60px;
     }
     .popup__btn{
-        bottom: -20px;
+        /* bottom: -20px; */
     }
     .popup__item{
         margin-bottom: 0;
@@ -3213,8 +3217,11 @@ body{
     .popup__subtitle{
         margin-bottom: 15px;
     }
+    .popup__checkbox{
+        margin-bottom: 10px;
+    }
     .popup__btn{
-        bottom: 10px;
+        /* bottom: 10px; */
     }
     .popup__item{
         margin-bottom: 8px;
@@ -3249,6 +3256,6 @@ body{
         right: 5px;
     }
     .popup__btn{
-        bottom: 12px;
+        /* bottom: 12px; */
     }
 }
