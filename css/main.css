@@ -3117,9 +3117,13 @@ body{
 
     .popup__body{
         width: 360px;
-        height: 90%;
+        max-height: 90%;
+        min-height: 615px;
         padding: 10px 10px;
 
+    }
+    .popup__subtitle{
+        margin-bottom: 16px;
     }
     .input-big{
         min-height: 60px;
