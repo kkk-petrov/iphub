@@ -3113,9 +3113,24 @@ body{
 
     .popup__body{
         width: 360px;
+        height: 90%;
+        padding: 10px 10px;
+
+    }
+    .input-big{
+        min-height: 60px;
+        max-height: 60px;
     }
     .popup__btn{
         bottom: -20px;
+    }
+    .popup__item{
+        margin-bottom: 0;
+    }
+
+    .popup__btn-close {
+        top: 10px;
+        right: 10px;
     }
 }
 
@@ -3191,15 +3206,15 @@ body{
     }
     .popup__body{
         width: 280px;
-        height: 670px;
-        padding: 30px 15px;
+        height: 90%;
+        padding: 10px 10px;
         
     }
     .popup__subtitle{
         margin-bottom: 15px;
     }
     .popup__btn{
-        bottom: -3px;
+        bottom: 10px;
     }
     .popup__item{
         margin-bottom: 8px;
@@ -3225,18 +3240,15 @@ body{
         height: 90%;
         padding: 10px 10px;
     }
-    .input-big{
-        min-height: 60px;
-        max-height: 60px;
-    }
+    .popup__btn-close,
     .popup__btn-close img{
         width: 12px;
         height: 12px;
+
+        top: 5px;
+        right: 5px;
     }
     .popup__btn{
-        bottom: -4px;
-    }
-    .popup__item{
-        margin-bottom: 0;
+        bottom: 12px;
     }
 }
