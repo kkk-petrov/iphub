@@ -1665,6 +1665,8 @@ body{
     padding: 10px;
     cursor: pointer;
 
+    transition: background .3s ease-in;
+
 }
 
 .categories__item:first-child {
