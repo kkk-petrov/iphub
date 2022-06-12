@@ -258,7 +258,7 @@ body{
     flex-direction: row;
 
     list-style-type: none;
-    opacity: 0;
+    opacity: 1;
 
 }
 .menu__item:not(:last-child){
