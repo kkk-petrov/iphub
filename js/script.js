@@ -1,4 +1,5 @@
 // Переменные и константы для бургера
+const body = document.querySelector('body');
 const page = document.querySelector(".page");
 const menu = document.querySelector(".menu__list");
 const menuIcon = document.querySelector(".menu__icon");
@@ -7,7 +8,6 @@ const menuLinks = document.querySelectorAll(".menu__link[data-goto]")
 // Переменные и константы для попапа
 const popup = document.querySelector('.popup');
 const popupContainer = document.querySelector('.popup__container');
-const popupOpen = document.querySelector('.btn-big');
 const popupClose = document.querySelector('.popup__btn-close__image');
 const popupItem = document.querySelector('.popup__item');
 const popupInputs = document.querySelectorAll('.popup__item-input');
@@ -15,12 +15,11 @@ const popupEmail = document.querySelector('#popup-email');
 const popupTel = document.querySelector('#popup-tel');
 const popupCheckbox = document.querySelector('#popup-checkbox');
 const popupBtn = document.querySelector('.popup__btn');
-const nums = '1234567890';
 
 // Попап
-page.addEventListener('click', (e) => {
+body.addEventListener('click', (e) => {
     console.log(e.target)
-    if(e.target.classList.contains('btn-big')){
+    if(e.target.classList.contains('btn-big') || e.target.classList.contains('contact__button')){
         popup.classList.add('active')
     }
 })

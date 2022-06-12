@@ -239,6 +239,10 @@ body{
 
     color: #DA4533;
     text-decoration: none;
+    background-color: #1B1B1B;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 .contact__button:hover {
     text-decoration: underline;
