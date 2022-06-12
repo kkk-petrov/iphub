@@ -258,6 +258,8 @@ body{
     flex-direction: row;
 
     list-style-type: none;
+    opacity: 0;
+
 }
 .menu__item:not(:last-child){
     margin-right: 30px;
@@ -282,6 +284,8 @@ body{
     visibility: hidden;
     width: 26px;
     height: 26px;
+    transition: background .3s ease;
+
 }
 
 .menu__icon span,
@@ -290,7 +294,7 @@ body{
     position: absolute;
     height: 10%;
     width: 100%;
-    transition: all .3s ease-out;
+    transition: all .2s ease-out;
     background-color: #fff;
     right: 0;
 
@@ -326,6 +330,12 @@ body{
 }
 .menu__icon.active::before{
     transform: rotate(45deg);
+}
+
+.menu__icon:hover::after,
+.menu__icon:hover::before,
+.menu__icon:hover span{
+    width: 26px;
 }
 
 /* =========================== MAIN BLOCK =========================== */
@@ -2085,7 +2095,7 @@ body{
         font-size: 30px;
         font-weight: 700;
 
-
+        opacity: 0;
         margin: 0;
         position: fixed;
         top: 0;
@@ -2095,13 +2105,14 @@ body{
         background-color: rgba(0, 0, 0, 0.950);
         z-index: 10;
         padding: 60px 30px;
-        transition: all .6s ease 0s;
+        transition: all .3s ease-in;
         /* transform: translate(-100%, 0px); */
         /* margin-top: 30px; */
     }
     .menu__list.active{
         /* transform: translate(0px, 0px); */
         right: -10px;
+        opacity: 1;
     }
     
     .menu__list::before{
@@ -2323,7 +2334,9 @@ body{
         transform: scale(1) translate(0px, -50%);
         width: 26px;
     }
-
+    .menu__icon:hover{
+        background-color: #323232;
+    }
     .menu__list{
 
     }
